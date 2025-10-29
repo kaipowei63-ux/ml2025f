@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      在這門機器學習課程中，我們實際操作了 3D Slicer 來標註心臟 CT 超音波影像。過程中學習到醫學影像處理與分割的基本概念，也了解影像資料對模型訓練的重要性。透過手動標註，我體會到資料前處理的複雜性與精準度對 AI 模型成效的關鍵影響，這次實作讓我更深入了解醫學影像與機器學習的結合應用。
     </div>
   </div>
 
@@ -169,22 +169,27 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 使用 3D Slicer 內建基本功能(比如上課時教的三標籤法、閥值法、球型筆刷法、筆刷、剪刀、邏輯計算等)，進行手動心臟肌肉標註。 <br>
+            錄影後上傳YouTube(或是直播到YouTube)，影片時間超過一小時。
+          </td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 使用 3D Slicer 內建基本功能(比如上課時教的三標籤法、閥值法、球型筆刷法、筆刷、剪刀、邏輯計算等)，進行手動心臟肌肉標註。 <br>
+          錄影後上傳YouTube(或是直播到YouTube)，影片時間超過三小時。</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 匯出標註好的心臟 nii.gz 檔。 <br>
+          Dice-Sørensen coefficient 分數，介於全班前20名。(1pt) <br>
+          Dice-Sørensen coefficient 分數，介於全班前10名。(1pt)</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -196,13 +201,19 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <iframe width="100%" height="560" src="https://www.youtube.com/embed/d3Z9AFkEYIE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+<div class="row hw12 bottomrow">
+  <div class="col-md-12 twenty">
+    標註檔連結: 
+    <a href="https://github.com/kaipowei63-ux/ml2025f/raw/refs/heads/main/hw01/113598045.nii.gz" download>
+      https://github.com/kaipowei63-ux/ml2025f/raw/refs/heads/main/hw01/110440002.nii.gz
+    </a>
+  </div>
+</div>
 
   <!-- ------------------------------------------------>
 
