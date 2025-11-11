@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      這次的機器學習作業二中，我使用了 Google Colab 來訓練 3D U-Net 模型，用於心臟肌肉影像的分割任務。Colab 提供強大的 GPU 資源，讓我能在雲端順利完成模型訓練。過程中我學會了如何處理 3D 醫學影像資料、調整模型參數與觀察訓練結果，對深度學習應用在醫療領域的潛力有更深刻的理解。
+      這次的機器學習作業二中，我使用了 Google Colab 來訓練 3D U-Net 模型，用於心臟肌肉影像的分割任務。Colab 提供強大的 GPU 資源，讓我能在雲端順利完成模型訓練，不過他有限制每日用量，有點煩人，於是我還買了一次性擴充。雖然說過程中遇到了很多問題，主要都是源自於操作不熟悉，但是最後還是有成功地訓練好模型，很有成就感。
     </div>
   </div>
 
@@ -169,22 +169,23 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成colab baseline的訓練並產生權重檔
+          </td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 調整並增加使用的訓練資料集(AICUP_training.json)</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 使用其他模型(例如. Attn U-Net、UNETR、Swin UNETR...等)，對心臟資料進行訓練，並繳交colab程式碼。
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -196,13 +197,36 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <!-- <iframe width="100%" height="560" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+      <table>
+        <tr>
+          <td> Simple Baseline Dice分數圖片
+          <img src="simple.png" width="100%" height="560">
+        </tr>
+        <tr>
+          <td> Medium Baseline Dice分數圖片
+          <img src="medium.png" width="100%" height="560">
+        </tr>
+      </table>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+<div class="row hw12 bottomrow">
+  <div class="col-md-12 twenty">
+    Strong Baseline colab連結: 
+    <a href="https://colab.research.google.com/drive/1iC7i_EWCZsCr5T-7jDD77V8dt_simGsn?usp=sharing">
+      https://colab.research.google.com/drive/1iC7i_EWCZsCr5T-7jDD77V8dt_simGsn?usp=sharing
+    </a>
+    <table>
+      <tr>
+        <td> Strong Baseline Dice分數圖片 使用了attention_unet
+        <img src="strong.png" width="100%" height="560">
+      </tr>
+    </table>
+  </div>
+</div>
 
   <!-- ------------------------------------------------>
 
